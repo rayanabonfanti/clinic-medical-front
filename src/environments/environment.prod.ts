@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  title: "Projeto Clínica Médica",
+  //endpoint: endpoints("/clinic-medical")
 };
