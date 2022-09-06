@@ -1,27 +1,41 @@
-# ProjectClinicMedicalFront
+# Projeto Clínica Médica
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+Esse projeto foi gerado com Angular CLI versão 14.0.1. Telas de criação de CRUD (create, read, update, delete) de pacientes e médicos para acesso de planos de saúde e fazer consultas médicas agendadas. O objetivo da aplicação é criar consultar agendadas no Ambiente sendo disponibilizado para visualização.
 
-## Development server
+# Funcionalidades
+Login (autenticação JWT) com navegação de telas com rotas protegidas por guardas estruturadas para funções de acesso.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Sugestão de IDE
+Visual Studio
 
-## Code scaffolding
+# Pré-requisito
+- NodeJs<br>
+Versão mais atualizada e stable
+- CLI Angular
+Versão 14.0.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação de Dependências
+- Para instalar o pacote de gerencianamento. No CMD digite npm install --global yarn<br>
+- Após digite, yarn install<br>
+- Para instalar o pacote de bootstrap. No CMD digite, npm install bootstrap<br>
+- Entre no projeto e encontre o arquivo "angular.json" e coloque essa linha de código "node_modules/bootstrap/dist/css/bootstrap.min.css", na estrutura abaixo:<br>
+"styles": [
+  "styles.scss"
+]<br>
+- Para instalar o pacote ngx-bootstrap. No CMD digite, npm install bootstrap ngx-bootstrap --save<br>
 
-## Build
+## Executando a aplicação
+Execute o ng serve ou yarn start no projeto de desenvolvimento, para então ser possível a navegação na web por "http://localhost:4200/". Em qualquer momento que for fazer mudanças no projeto, se tiver rodando o comando, irá fazer a atualização automática, assim podendo visualizar no navegador logo após.<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Andaimes do Código
 
-## Running unit tests
+Execute "ng g c component-name" para gerar um novo componente.<br>
+Execute "ng g c pages/<pages-name>" para gerar um novo componente de página.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Construir
+Execute ng build para construir o projeto.<br>
 
-## Running end-to-end tests
+## Testes
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Execute ng test para executar os testes unitários via Karma Jasmine.<br>
+Execute comando mais completo ng test --watch=false ou ng test coverage --watch=false para executar os testes unitários via Karma Jasmine.
