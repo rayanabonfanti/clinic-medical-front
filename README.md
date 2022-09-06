@@ -1,27 +1,68 @@
-# ProjectClinicMedicalFront
+# Projeto Clínica Médica
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+Esse projeto foi gerado com Angular CLI versão 14.0.1. Telas de criação de CRUD (create, read, update, delete) de pacientes e médicos para acesso de planos de saúde e fazer consultas médicas agendadas. O objetivo da aplicação é criar consultar agendadas no Ambiente sendo disponibilizado para visualização.
 
-## Development server
+# Funcionalidades
+Login (autenticação JWT) com navegação de telas com rotas protegidas por guardas estruturadas para funções de acesso.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Sistema
+- Sugestão de IDE<br>
+- Pré-requisito
+- Instalação
+- Execução da Aplicação
+- Andaimes do Código
+- Construir
+- Testes
+- Tecnologias Utilizadas
+- Membros do Time
 
-## Code scaffolding
+# Sugestão de IDE
+Visual Studio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Pré-requisito
+- **NodeJs**<br>
+Versão mais atualizada e stable
+- **CLI Angular**
+Versão 14.0.1
 
-## Build
+## Instalação de Dependências
+- Para instalar o pacote de gerencianamento. No CMD digite npm install --global yarn<br>
+- Após digite, yarn install<br>
+- Para instalar o pacote de bootstrap. No CMD digite, npm install bootstrap<br>
+- Entre no projeto e encontre o arquivo "angular.json" e coloque essa linha de código "node_modules/bootstrap/dist/css/bootstrap.min.css", na estrutura abaixo:<br>
+"styles": [
+  "styles.scss"
+]<br>
+- Para instalar o pacote ngx-bootstrap. No CMD digite, npm install bootstrap ngx-bootstrap --save<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Executando a aplicação
+Execute o ng serve ou yarn start no projeto de desenvolvimento, para então ser possível a navegação na web por "http://localhost:4200/". Em qualquer momento que for fazer mudanças no projeto, se tiver rodando o comando, irá fazer a atualização automática, assim podendo visualizar no navegador logo após.<br>
 
-## Running unit tests
+## Andaimes do Código
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute "ng g c component-name" para gerar um novo componente.<br>
+Execute "ng g c pages/<pages-name>" para gerar um novo componente de página.
 
-## Running end-to-end tests
+## **Construir**
+Execute ng build para construir o projeto.<br>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## **Testes**
 
-## Further help
+Execute ng test para executar os testes unitários via Karma Jasmine.<br>
+Execute comando mais completo ng test --watch=false ou ng test coverage --watch=false para executar os testes unitários via Karma Jasmine.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## **Tecnologias Utilizadas**
+-	Angular 14
+-	NodeJs
+-	Karma Jasmine
+  
+  ## **Padrões de Nomenclatura**
+-	**core/services:** contém os serviços a serem chamados para integrar com API do backend.
+-	**core/models:** contém as entidades em request e response DTO que são como enviadas e recebidas os dados do DTO.
+-	**modules:** contém todos os componentes criados de CRUD ou qualquer outro que apareça como tela.
+-	**shared:** contém os componentes compartilhados por todo o module, por exemplo um botão específico e padrão, pode ser colocado aqui para que não repita o componente em todo código, assim só chamando ele no shared.<br>
+-	**assets:** contém todos os arquivos de imagem, svg, ícones, também o global.scss que contém toda a parte de CSS do projeto por completo.
+-	**environments:** contém os endpoints de caminho e chamada do servidor front para o servidor back.
+  
+  ## **Membros do Time**
+-	Rayana Ribeiro Bonfanti
