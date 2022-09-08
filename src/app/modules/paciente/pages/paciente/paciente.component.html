@@ -1,0 +1,26 @@
+<div class="space-default">
+    <h2>Cadastrar Paciente</h2>
+    
+    <p class="mt-3 mb-3">
+        Para cadastrar o serviço, informe os seguintes dados:
+    </p>
+    
+    <form [formGroup]="formDatasPaciente" class="full-height">
+        <div class="general-outline">
+                <p>Nome do Paciente</p>
+                <input type="text" required formControlName="name">
+                <p>Telefone do Paciente</p>
+                <input type="text" required formControlName="telefone">
+                <p>E-mail do Paciente</p>
+                <input type="text" required formControlName="email">
+                <p>Endereço do Paciente</p>
+                <input type="text" required formControlName="endereco">
+                <p>Data de Nascimento do Paciente</p>
+                <input type="date" required formControlName="dataNascimento">
+        </div>    
+    </form>
+    <div class="col-2 d-flex justify-content-between mt-5">
+        <button class="mr-3 m-0" (click)="voltar()">Voltar</button>
+        <button class="mr-3 m-0" (click)="continuar()">Continuar</button>
+    </div>
+</div>

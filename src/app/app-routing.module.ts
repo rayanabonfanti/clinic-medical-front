@@ -19,10 +19,10 @@ const routes: Routes = [
 //    path: "medico",
 //    loadChildren: () => import('./modules/medico/medico.module').then(m=>m.MedicoModule)
 //  },  
-//  {
-//    path: "paciente",
-//    loadChildren: () => import('./modules/paciente/paciente.module').then(m=>m.PacienteModule)
-//  },
+  {
+    path: "paciente",
+    loadChildren: () => import('./modules/paciente/paciente.module').then(m=>m.PacienteModule)
+  },
 ];
 
 @NgModule({

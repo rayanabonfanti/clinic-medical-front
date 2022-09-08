@@ -1,8 +1,8 @@
-export function endpoints(){
+export function endpoints(host: string){
     return {
-        login: '/login',
-        datas: '/api/datas/',
-        medico: '/api/medico/',
-        paciente: '/api/paciente/',
+        login: `${host}` + '/api/login/',
+        datas: `${host}` + '/api/datas/',
+        paciente: `${host}` + '/api/paciente/',
+        medico: `${host}` + '/api/medico/',
     }
 }
